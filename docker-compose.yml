@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  mysql:
+    image: 40277434/mysql
+    container_name: my_sql_container
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 3305:3306
